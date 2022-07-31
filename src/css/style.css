@@ -1,0 +1,12 @@
+:root {
+  --gray-main: #707070;
+  --gray-paragraph: #888888;
+  --white-main: #FFFFFF;
+
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  margin-inline: auto;
+}
