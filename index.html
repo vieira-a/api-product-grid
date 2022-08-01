@@ -32,23 +32,35 @@
         </p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore eius aut et blanditiis, tempore saepe, magni explicabo exercitationem dignissimos obcaecati aperiam incidunt earum quas, id non? Repellat esse et delectus?</p>
       </div>
-      <div class="form-cadastro">
-        <input type="text" id="nome">
-        <input type="text" id="email">
-        <input type="text" id="cpf">
-        <input type="radio" id="genero-m">
-        <input type="radio" id="genero-f">
-        <button>Enviar</button>
+      <div class="form-registration">
+
+        <p><label for="name">Seu nome:<input type="text" id="name"></label></p>
+        <p><label for="email">E-mail:<input type="text" id="email"></label></p>
+        <p><label for="cpf">CPF:<input type="text" id="cpf"></label></p>
+        <p><label for="genre-m">Masculino<input type="radio" id="genre-m"></label>
+        <label for="genre-f">Feminino<input type="radio" id="genre-f"></label></p>
+        <p><button id="register">Enviar</button>
       </div>
     </main>
   
-    <div id="produtos">
+    <div id="products">
       <header>
         <h1>Uma seleção especial</h1>
       </header>
       <div class="content">
-        
+        <!-- Estrutura a ser inserida via JS para cada produto contido no JSON.
+          <div class="imagem-produto">
+            <div class="info-produto">
+              <h4 id="nome-produto">Nome do produto</h4>
+              <p id="preco-inicial">De: R$ 23,99</p>
+              <p id="preco-final">Por: R$ 19,99</p>
+              <p id="parcelamento">Ou 2x de R$ 9,99</p>
+            </div>
+          </div>
+        -->
       </div>
+      <button id="more-products">Ainda mais produtos aqui!</button>
     </div>
+
   </body>
 </html>
