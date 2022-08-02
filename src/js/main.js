@@ -17,9 +17,15 @@ async function getAllProducts() {
   data.map((product) => {
     //console.log(product.installments)
     
-    //let divProductImage = document.createElement("div")
+    let divProductImage = document.createElement("div")
+    divProductImage.className = "product-image"
     
-    let divproductContent = document.createElement("div");
+    let divProductContent = document.createElement("div");
+    divProductContent.className = "product"
+
+    let divProductData = document.createElement("div")
+    divProductData.className = "product-data"
+    
     let productName = document.createElement("h3");
     let productOldPrice = document.createElement("h4");
     let productPrice = document.createElement("h2");
@@ -38,20 +44,28 @@ async function getAllProducts() {
     productLink.innerText = "Comprar"
     productLink.setAttribute("href", `/product.html?id=${product.id}`);
     
-    //divProductImage.appendChild(productImage)
-    divproductContent.append(productImage);
-    divproductContent.append(productName);
-    divproductContent.append(`De: ${productOldPrice.textContent}`);
-    divproductContent.append(`Por: ${productPrice.textContent}`);
-    divproductContent.append(productInstallmentsCount);
-    divproductContent.append(productInstallmentsValue);
-    divproductContent.append(productLink);
+    divProductImage.append(productImage);
 
-    productsContainer.append(productImage)
-    productsContainer.append(divproductContent)
-    
-    console.log(product.id, product.name, product.image)
+    divProductContent.append(divProductImage);
 
+    // divProductContent.append(productName);
+    // divProductContent.append(productStrDe);
+    // divProductContent.append(productOldPrice)
+    // divProductContent.append(productPrice);
+    // divProductContent.append(`Ou ${productInstallmentsCount}x de `);
+    // divProductContent.append(`R$ ${productInstallmentsValue}`);
+    // divProductContent.append(productLink);
+    // productsContainer.appendChild(divProductContent)
+
+    divProductData.append(productName);
+    divProductData.append(productOldPrice)
+    divProductData.append(productPrice);
+    divProductData.append(`Ou ${productInstallmentsCount}x de `);
+    divProductData.append(`R$ ${productInstallmentsValue}`);
+    divProductData.append(productLink);
+
+    productsContainer.appendChild(divProductImage)
+    productsContainer.appendChild(divProductData)
   })
 
 }
