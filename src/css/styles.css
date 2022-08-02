@@ -10,3 +10,10 @@ body {
   width: 100vw;
   margin-inline: auto;
 }
+
+#products-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  
+  
+}

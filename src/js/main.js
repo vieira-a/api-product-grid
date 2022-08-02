@@ -1,7 +1,7 @@
-const url = "https://frontend-intern-challenge-api.iurykrieger.vercel.app/products?page=1"
+const url = "https://frontend-intern-challenge-api.iurykrieger.vercel.app/products"
 
 const productsContainer = document.querySelector("#products-container");
-console.log(productsContainer)
+//console.log(productsContainer)
 //Get all products
 
 async function getAllProducts() {
@@ -13,35 +13,46 @@ async function getAllProducts() {
   
   data = data.products
   
-  console.log(data)
-
+  
   data.map((product) => {
-    //console.log(product.name)
+    //console.log(product.installments)
     
-    let divProductImage = document.createElement("div")
-    let divproductContent = document.createElement("div")
-
-    let productName = document.createElement("h3")
-    let productOldPrice = document.createElement("h4")
-    let productPrice = document.createElement("h2")
+    //let divProductImage = document.createElement("div")
+    
+    let divproductContent = document.createElement("div");
+    let productName = document.createElement("h3");
+    let productOldPrice = document.createElement("h4");
+    let productPrice = document.createElement("h2");
+    let productInstallments = document.createElement("p")
+    let productLink = document.createElement("a");
 
     productImage = new Image()
     productImage.src = product.image
-    console.log(productImage.src)
+
 
     productName.innerText = product.name;
     productOldPrice.innerText = product.oldPrice;
     productPrice.innerText = product.price;
-
-    divproductContent.appendChild(productImage)
-    divproductContent.appendChild(productName);
-    divproductContent.appendChild(productOldPrice);
-    divproductContent.appendChild(productPrice);
-
-    productsContainer.appendChild(divproductContent)
+    productInstallmentsCount = product.installments.count
+    productInstallmentsValue = product.installments.value
+    productLink.innerText = "Comprar"
+    productLink.setAttribute("href", `/product.html?id=${product.id}`);
     
-  })
+    //divProductImage.appendChild(productImage)
+    divproductContent.append(productImage);
+    divproductContent.append(productName);
+    divproductContent.append(`De: ${productOldPrice.textContent}`);
+    divproductContent.append(`Por: ${productPrice.textContent}`);
+    divproductContent.append(productInstallmentsCount);
+    divproductContent.append(productInstallmentsValue);
+    divproductContent.append(productLink);
 
+    productsContainer.append(productImage)
+    productsContainer.append(divproductContent)
+    
+    console.log(product.id, product.name, product.image)
+
+  })
 
 }
 
