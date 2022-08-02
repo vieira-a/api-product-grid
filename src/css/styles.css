@@ -1,3 +1,9 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --gray-main: #707070;
   --gray-paragraph: #888888;
@@ -9,6 +15,42 @@
 body {
   width: 100vw;
   margin-inline: auto;
+
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  
+}
+li {
+  list-style: none;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.4rem;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+.wrapper {
+  width: 42rem;
+  margin-inline: 1.8rem;
 }
 
 #products-container {
@@ -17,6 +59,18 @@ body {
   width: fit-content;
 
   gap: 2rem;
+}
 
+#share {
+  padding-top: 12.9rem;
+  padding-bottom: 9.5rem;
+}
+
+#share h3 {
+  padding-bottom: 2.8rem;
+}
+
+#share header {
+  text-align: center;
 }
 
