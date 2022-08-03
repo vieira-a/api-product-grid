@@ -13,6 +13,8 @@
 }
 
 body {
+  top: 0;
+  margin-left: 5rem;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
 }
@@ -20,6 +22,7 @@ body {
 button {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.4rem;
+  color: var(--gray-paragraph);
 }
 
 h1, 
@@ -56,18 +59,17 @@ h5 {
 }
 
 p {
+  text-align: left;
   font-size: 1.2rem;
-}
+  line-height: 175%;
 
-.main {
-  position: absolute;
 }
 
 .corner {
   width: 45.6rem;
   height: 39.7rem;
   background-color: var(--gray-main);
-  position: relative;
+  position: absolute;
   z-index: -1;
 }
 .corner::after {
@@ -84,6 +86,7 @@ p {
 
 .wrapper {
   top: 0;
+  
   width: 42rem;
   margin-inline: 1.8rem;
   position: absolute;
@@ -103,6 +106,7 @@ p {
 
 #header-top h5 {
   padding-bottom: 5.6rem;
+  width: 37rem;
 }
 
 #navigation ul {
@@ -122,6 +126,45 @@ p {
   border-radius: .4rem;
   
   color: var(--gray-paragraph);
+}
+
+main header h2 {
+  padding-bottom: 1.7rem;
+}
+
+main .content {
+  padding-bottom: 3rem;
+}
+
+.input-text input {
+  width: 100%;
+  height: 3rem;
+  border: 1px solid #707070;
+  margin-top: 0.7rem;
+  margin-bottom: 2rem;
+}
+
+.input-radio {
+  display: flex;
+  flex-direction: row;
+
+  align-content: center;
+  
+  gap: 4rem;
+}
+
+.input-radio input {
+  vertical-align: middle;
+  margin-right: .5rem;
+}
+
+main button {
+  width: 38.3rem;
+  height: 3.9rem;
+  margin: 2rem 1.9rem 10.1rem;
+
+  border: 1px solid var(--gray-main);
+  border-radius: 0.4rem;
 }
 
 
