@@ -15,7 +15,11 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
-    
+}
+
+button {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.4rem;
 }
 
 h1, 
@@ -70,12 +74,12 @@ p {
   content: "";
   position: absolute;
   z-index: -1;
-  bottom: -24rem;
-  left: -24rem;
-  width: 66rem;
-  height: 36.5rem;
-  transform: rotate(18deg);
-  background-color:var(--white-main);
+  bottom: -39rem;
+  left: -33rem;
+  width: 80rem;
+  height: 48rem;
+  transform: rotate(13deg);
+  background-color: var(--white-main)
 }
 
 .wrapper {
@@ -96,6 +100,30 @@ p {
 #header-top h1 {
   padding-bottom: .9rem;
 }
+
+#header-top h5 {
+  padding-bottom: 5.6rem;
+}
+
+#navigation ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: fit-content;
+  margin-left: 3.8rem;
+  gap: 2rem;
+}
+
+#navigation button {
+  width: 16rem;
+  height: 4rem;
+
+  background-color: var(--white-main);
+  border: 1px solid var(--gray-main);
+  border-radius: .4rem;
+  
+  color: var(--gray-paragraph);
+}
+
 
 #products-container {
   display: grid;
