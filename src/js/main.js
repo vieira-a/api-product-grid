@@ -24,7 +24,8 @@ async function getAllProducts() {
     let productOldPrice = document.createElement("p");
     let productPrice = document.createElement("h4");
     let productInstallments = document.createElement("p")
-    let productLink = document.createElement("a");
+    let productLink = document.createElement("button");
+    productLink.className = "btn-comprar"
 
     let productCurrency = "R$"
 

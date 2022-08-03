@@ -65,14 +65,14 @@ p {
 
 }
 
-.corner {
+.bg-top {
   width: 45.6rem;
   height: 39.7rem;
   background-color: var(--gray-main);
   position: absolute;
   z-index: -1;
 }
-.corner::after {
+.bg-top::after {
   content: "";
   position: absolute;
   z-index: -1;
@@ -167,13 +167,77 @@ main button {
   border-radius: 0.4rem;
 }
 
+span {
+  width: 25%;
+  border: 1px solid var(--gray-paragraph);
+}
+
+#products header {
+  display: flex;
+  
+  align-items: center;
+  
+  justify-content: center;
+}
+
+#products header h3 {
+ padding-inline: 1.7rem;
+ 
+}
 
 #products-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: fit-content;
 
-  gap: 2rem;
+  margin-top: 2.3rem;
+}
+
+.product-data {
+  margin-left: 2.3rem;
+}
+
+.product-data h5 {
+  margin-bottom: 1.3rem;
+}
+
+.product-data h4 {
+  font-weight: bold;
+  padding-block: 0.6rem;
+}
+
+.btn-comprar {
+  width: 20rem;
+  height: 3rem;
+
+  background-color: var(--white-main);
+  border: 1px solid var(--gray-main);
+  border-radius: .4rem;
+  
+  color: var(--gray-paragraph);
+}
+
+.product-button {
+  text-align: center;
+  margin-top: 5.6rem;
+}
+
+#more-products {
+  width: 26rem;
+  height: 4rem;
+
+  background-color: var(--white-main);
+  border: 1px solid var(--gray-main);
+  border-radius: .4rem;
+  
+  color: var(--gray-paragraph);
+  
+}
+
+#products img {
+  border: 1px solid var(--gray-main);
+  padding-inline: 2rem;
+  margin-bottom: 3rem;
 }
 
 #share {
