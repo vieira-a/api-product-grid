@@ -43,6 +43,7 @@ async function getAllProducts() {
     divProductImage.append(productImage);
 
     divProductContent.append(divProductImage);
+    divProductContent.append(divProductData)
 
     divProductData.append(productName);
     divProductData.append(productOldPrice)
@@ -50,8 +51,9 @@ async function getAllProducts() {
     divProductData.append(productInstallments)
     divProductData.append(productLink);
 
-    productsContainer.appendChild(divProductImage)
-    productsContainer.appendChild(divProductData)
+    //productsContainer.appendChild(divProductImage)
+    //productsContainer.appendChild(divProductData)
+    productsContainer.append(divProductContent)
   })
 }
 
