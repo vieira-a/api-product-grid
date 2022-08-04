@@ -66,6 +66,7 @@ p {
   line-height: 175%;
 }
 
+/*MOBILE FIRST*/
 .wrapper {
 
   width: 42rem;
@@ -78,7 +79,7 @@ p {
   
   box-shadow: 0px 1px 0px 1px #CCCCCC;
 }
-
+/*HEADER*/
 #header-top {
   margin-inline: auto;
   width: 42rem;
@@ -120,6 +121,7 @@ p {
   color: var(--gray-paragraph);
 }
 
+/*CONTENT MAIN AND FORM*/
 main header h2 {
   padding-bottom: 1.7rem;
 }
@@ -158,6 +160,8 @@ main button {
   border: 1px solid var(--gray-main);
   border-radius: 0.4rem;
 }
+
+/*PRODDUCT GRID*/
 
 #products span {
   width: 23%;
@@ -209,6 +213,12 @@ main button {
   margin-top: 5.6rem;
 }
 
+#products img {
+  border: 1px solid var(--gray-main);
+  padding-inline: 2rem;
+  margin-bottom: 3rem;
+}
+
 #more-products {
   width: 26rem;
   height: 4rem;
@@ -222,12 +232,7 @@ main button {
   padding: 1rem 3.6rem;
 }
 
-#products img {
-  border: 1px solid var(--gray-main);
-  padding-inline: 2rem;
-  margin-bottom: 3rem;
-}
-
+/*SHARE SECTION*/
 #share {
   padding-top: 12.9rem;
   padding-bottom: 9.5rem;
@@ -272,6 +277,7 @@ main button {
   padding: 1rem 3.6rem;
 }
 
+/*FOOTER*/
 footer {
   margin-inline: auto;
   
@@ -291,4 +297,24 @@ footer .content {
   flex-direction: column;
   text-align: center;
   align-items: center;
+}
+
+/*DESKTOP VERSION*/
+@media (min-width: 1024px) {
+
+  body {
+    width: 100vw;
+  }
+
+  #header-top {
+    width: 100vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navigation ul {
+    display: flex;
+  }
 }
