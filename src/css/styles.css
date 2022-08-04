@@ -177,9 +177,7 @@ main {
 
 #products header {
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 }
 
@@ -190,8 +188,6 @@ main {
 .product {
   display: flex;
   gap: 2.3rem;
-  
-
   margin-top: 2.3rem;
 }
 
@@ -344,15 +340,32 @@ footer .content {
   }
 
   #products span {
-    width: 39%;
+    width: 38%;
     border: 1px solid var(--gray-paragraph);
   }
 
-  #products-container {
+  .product {
     display: flex;
     flex-direction: column;
+    
   }
 
+  #products-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 4rem;
+    
+  }
 
+  #products img {
+    border: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .product-image {
+    border: 1px solid var(--gray-paragraph);
+    text-align: center;
+  }
 
 }
