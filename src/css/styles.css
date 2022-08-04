@@ -13,10 +13,9 @@
 }
 
 body {
-
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1.2rem;
-
+  overflow-x: hidden;
 }
 
 button {
@@ -111,6 +110,7 @@ p {
   display: grid;
   grid-template-columns: 1fr 1fr;
   width: fit-content;
+  margin-inline: auto;
   gap: 2rem;
 }
 
@@ -308,7 +308,7 @@ footer .content {
 }
 
 /*DESKTOP VERSION*/
-@media (min-width: 1440px) {
+@media (min-width: 1024px) {
 
   body {
     width: 100vw;
